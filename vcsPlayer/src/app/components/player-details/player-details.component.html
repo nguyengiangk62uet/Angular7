@@ -1,0 +1,17 @@
+<div *ngIf="player" class="details">
+    <h3 style="text-align: center;">Player: {{player.name}}</h3>
+    <table style="width: 100%">
+      <tr>
+        <td>Name </td>
+        <td><input [(ngModel)]="player.name" placeholder="Name"></td>
+      </tr>
+      <tr>
+        <td>Club </td>
+        <td><input [(ngModel)]="player.club" placeholder="Club"></td>
+      </tr>
+      <tr>
+        <td>Birth </td>
+        <td><input [(ngModel)]="player.year" placeholder="Year"></td>
+      </tr>
+    </table>
+  </div>

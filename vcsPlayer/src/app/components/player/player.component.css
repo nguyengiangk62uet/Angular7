@@ -1,0 +1,28 @@
+
+.players {
+    background: #3399ff;
+    padding: 0.5em 1em 0.5em 1.5em;
+    margin: 1em;
+    min-width: 15em;
+    max-width: 16em;
+}
+
+.players .playerList {
+    font-size: 0.875em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: turquoise;
+    padding: 0.3em;
+    margin: 0.2em;
+    text-align: left;
+}
+
+.selected {
+    background: mediumseagreen !important;
+    color: white;
+    cursor: pointer;
+}
+.parent {
+    display: flex;
+}
+
+

@@ -1,0 +1,20 @@
+<h1 style="color: seagreen; text-align: center;">Vietnam Championship Series A</h1>
+<div>
+<input type="text" placeholder="Name" [(ngModel)]="newName">
+<input type="text" placeholder="Birthday Year" [(ngModel)]="newYear">
+<input type="text" placeholder="Club" [(ngModel)]="newClub">
+<br>
+<button (click)="addPlayer();">Thêm game thủ</button>
+</div>
+<h2 style="text-align: left; margin-left: 0.5em;">Danh sách game thủ</h2>
+<div class="parent">
+  <ol class="players">
+    <li class="playerList" *ngFor="let eachPlayer of players" [class.selected]="eachPlayer === selectedPlayer"
+      (click)="onSelect(eachPlayer)">
+      {{eachPlayer.name}} - {{eachPlayer.club}}
+      <button (click)="removePlayer(eachPlayer.id);" style="float: right;">Xóa</button>
+    </li>
+  </ol>
+  <app-player-details [player]="selectedPlayer"></app-player-details>
+</div>
+<app-messages></app-messages> 
